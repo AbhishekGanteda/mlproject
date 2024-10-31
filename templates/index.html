@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Student Marks Predictor</title>
+    <style>
+        /* Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0d1b2a;
+        }
+
+        /* Background Image */
+        .background {
+            background: url('https://example.com/successful-students.jpg') no-repeat center center/cover; /* Replace with a relevant image URL */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.7);
+            z-index: -1;
+        }
+
+        /* Overlay Container */
+        .overlay {
+            text-align: center;
+            color: #f0f4f8;
+            padding: 20px;
+            max-width: 800px;
+            background: rgba(13, 27, 42, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Title and Tagline */
+        .overlay h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .overlay p {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .btn:hover {
+            background-color: #218838;
+            transform: translateY(-3px);
+        }
+
+        /* Image Thumbnails */
+        .image-thumbnails {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .image-thumbnails img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .image-thumbnails img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Image -->
+    <div class="background"></div>
+
+    <!-- Overlay Content -->
+    <div class="overlay">
+        <h1>Welcome to Student Marks Predictor</h1>
+        <p>Unlock insights into student performance by analyzing essential factors. Predict marks, empower growth, and foster success!</p>
+        <a href="home.html" class="btn">Start Predicting</a>
+
+        <!-- Related Images Section -->
+        <div class="image-thumbnails">
+            <img src="https://img.freepik.com/premium-vector/stack-books-with-one-blue-orange-top_1277164-383.jpg" alt="Student with Book"> <!-- Replace with relevant image -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfxrya1pIIDoBWszjZ2jTDFTnf7lqWt2ZDUA&s" alt="Education Concept"> <!-- Replace with relevant image -->
+            <img src="https://www.euroschoolindia.com/wp-content/uploads/2023/08/impact-of-classroom-design-on-students.jpg" alt="Classroom"> <!-- Replace with relevant image -->
+        </div>
+    </div>
+
+</body>
+</html>
